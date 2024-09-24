@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style/formtaskstyle.css" rel="stylesheet">
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="4">Kartu Mahasiswa</th>
+        </tr>
+        <tr>
+            <th rowspan="2">
+                <img src="assets/img/gawk.jpeg" alt="foto ganteng rawwr">
+            </th>
+        </tr>
+        <tr>
+            <td><input type="text" name="NIM" placeholder="NIM"></td>
+            <td><input type="text" name="nama" placeholder="nama"></td>
+            <td><input type="text" name="Prodi" placeholder="prodi"></td>
+        </tr>
+        </table>
+    <fieldset>
+        <legend>Formulir Pendafta   ran Siswa</legend>
+        <form action="/submit_registration" method="post">
+            <label for="student_name">Nama Lengkap:</label><br>
+            <input type="text" id="student_name" name="student_name" required><br><br>
+            
+            <label for="student_birthdate">Tanggal Lahir:</label><br>
+            <input type="date" id="student_birthdate" name="student_birthdate" required><br><br>
+
+            <label for="student_religion">Agama:</label><br>
+            <select id="student_religion" name="student_religion" required>
+                <option value="">Pilih Agama</option>
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="katolik">Katolik</option>
+                <option value="hindu">Hindu</option>
+                <option value="buddha">Buddha</option>
+                <option value="konghucu">Konghucu</option>
+            </select><br><br>
+
+            <label for="student_phone">Nomor Telepon:</label><br>
+            <input type="tel" id="student_phone" name="student_phone" required><br><br>
+            
+            <label for="student_address">Alamat:</label><br>
+            <textarea id="student_address" name="student_address" rows="4" cols="50" required></textarea><br><br>
+            
+            <label for="student_gender">Jenis Kelamin:</label><br>
+            <input type="radio" id="male" name="student_gender" value="male" required> Laki-laki<br>
+            <input type="radio" id="female" name="student_gender" value="female" required> Perempuan<br><br>
+            
+            <label for="student_hobby">Hobi:</label><br></br>
+            <input type="text" value=""><br><br>
+
+            <label for="foto">Pas Foto:</label><br></br>
+            <input type="file" value="">
+        </form>
+    </fieldset>
+</body>
+</html>
